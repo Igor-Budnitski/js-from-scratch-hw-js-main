@@ -28,8 +28,6 @@ const cbFn = function (element, index) {
     return element % 2 !== 0;
 }
 
-// const filter = () => {}
-
 const filter = (array, callback) => {
     let result = [];
     for (let i = 0; i < array.length; i++) {
