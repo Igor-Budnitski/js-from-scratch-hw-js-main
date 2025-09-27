@@ -22,7 +22,7 @@ const oddNumbers = filter(numbers, (element, index) => {
 
 console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 */
-// let numbers = [1, 2, 3, 4, 5,11,13,15,66,44,33,22,121];
+let numbers = [1, 2, 3, 4, 5,11,13,15,66,44,33,22,121];
 
 const cbFn = function (element, index) {
     return element % 2 !== 0;
@@ -38,4 +38,4 @@ const filter = (array, callback) => {
     return result;
 }
 
-// console.log(filter(numbers, cbFn));
+console.log(filter(numbers, cbFn));
