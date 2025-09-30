@@ -31,13 +31,13 @@ btnNext.addEventListener('click', () => {
     }
     imageElement.src = WEB_TECH_IMAGES[currentIndex];
   // console.log('NEXT:', currentIndex);
-})
+});
 
 btnPrev.addEventListener('click', () => {
   currentIndex--;
-  if (currentIndex <= 0){
+  if (currentIndex < 0){
     currentIndex = 2;
   }
   // console.log('PREV', currentIndex);
   imageElement.src = WEB_TECH_IMAGES[currentIndex];
-})
+});
