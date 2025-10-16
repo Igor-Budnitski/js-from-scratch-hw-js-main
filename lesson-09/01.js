@@ -69,8 +69,10 @@ clearCartButton.addEventListener('click', function () {
 
 // Твой код:
 
+// Selecting div with class name
 const petButton = document.querySelector('.pet-shop')
 
+//Creating listener to find the button
 petButton.addEventListener('click', () => {
     const button = event.target.id;
     if (cart.length > 2) {
