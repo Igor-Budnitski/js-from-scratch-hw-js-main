@@ -44,13 +44,14 @@ startButton.addEventListener('click', () => {
             let isActive = false;
             let intervalId = null;
             countdownDisplay.textContent = '🚀';
+            clearInterval(intervalId);
         }
         counter--;
     }, 1000)
 });
 
 cancelButton.addEventListener('click', () => {
-    if (isActive){
+    if (isActive && intervalId === null){
         clearInterval(intervalId);
         intervalId = null;
         isActive = false;
